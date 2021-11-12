@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Enter New Details</title>
+  </head>
+  <body style="background-color:rgb(18, 187, 238);">
+    
+    <div class="container">
+        <h1 style="color:rgba(9, 9, 12, 0.9); text-align: center;margin-top: 50px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Enter New Details</h1>
+           <div class="row">
+               
+               <div class="container-fluid col-md-8 position-relative" style="background-color: rgb(208, 228, 138);border-radius: 20px;padding: 20px;font-family: 'Arial Narrow Bold', cursive;">
+                <form id="form" method="POST" action="/register">
+                    <div class="mb-5">
+                      <label for="user" class="form-label">Enter Employee name :</label>
+                      <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user">
+                      
+                    </div>
+                    <div class="mb-5">
+                      <label for="user" class="form-label">Enter EmployeeId :</label>
+                      <input style="border: 1px solid rgb(0, 0, 0);" type="number" class="form-control" name="id" id="id">
+                      
+                    </div>
+                    <div class="mb-5">
+                      <label for="user" class="form-label">Enter Password :</label>
+                      <input style="border: 1px solid rgb(0, 0, 0);" type="password" class="form-control" name="password" id="password">
+
+                    </div>
+                    <div class="mb-5">
+                      <label for="user" class="form-label">Enter Age :</label>
+                      <input style="border: 1px solid rgb(0, 0, 0);" type="number" class="form-control" id="age" name="age">
+                    </div>
+
+                    <div class="mb-5">
+                      <label class="label-title">Enter Gender :</label>
+                      <br>
+                      <br>
+                      <div class="input-group">
+                        <div class="col-4">
+                          <label for="male"><input class="form-check-input" type="radio" name="gender" value="male" id="male"> Male    </label>
+                        </div>
+                        <div class="col-4">
+                          <label for="female"><input class="form-check-input" type="radio" name="gender" value="female" id="female"> Female    </label>
+                        </div>
+                        <div class="col-4">
+                          <label for="others"><input class="form-check-input" type="radio" name="gender" value="others" id="others"> Others     </label>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="user" class="form-label">Enter Designation :</label>
+                        <select style="border: 1px solid rgb(0, 0, 0);" class="form-select" aria-label="Default select example" name="designation">
+                          <option selected>Choose Your Designation</option>
+                          <option value="Content Writer">Content Writer</option>
+                          <option value="Designer">Designer</option>
+                          <option value="Software Engineer">Software Engineer</option>
+                          <option value="Marketing Specialist">Marketing Specialist</option>
+                        </select> 
+                    </div>
+                    
+                    <div class="mb-5">
+                      <label for="email" class="form-label">Enter Experience in years :</label>
+                      <input style="border: 1px solid rgb(0, 0, 0);" type="number" id="Experience" name="Experience" class="form-control" required="required">
+                    </div>
+                    
+                    <div class="mb-5">
+                        <label  for="user" class="form-label">Enter Email :</label>
+                        <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="email" id="user">
+                        
+                    </div>
+                    <div class="mb-5">
+                        <label for="user" class="form-label">Enter Mobile Number :</label>
+                        <input style="border: 1px solid rgb(0, 0, 0);" type="number" class="form-control" name="phone_no" id="user">
+                        
+                    </div>
+                    <br>
+                    <input  class="btn btn-warning" type="submit" value="submit" style="border-radius: 7px; width: 120px; " onclick="validate()">
+              
+                </form>
+    
+               </div>
+           </div>
+     </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <br>
+    <br>
+    <footer >
+        <div class="container-fluid ">
+          <p style="color: rgb(10, 90, 10); text-align: center;">Developed By Lakshmanan </p>
+        </div>
+     </footer>
+ 
+  </body>
+ 
+</html>
